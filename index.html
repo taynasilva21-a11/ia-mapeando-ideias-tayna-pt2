@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizador de Estudos da Tayna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>Organizador de Estudos da Tayna</h1>
+    <p>Explore os tópicos abaixo para ver resumos ou navegue até as páginas completas para aprofundar cada assunto.</p>
+  </header>
+
+  <!-- LISTA DE CARDS -->
+  <main class="cards-container">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <div>
+        <span class="card-tag tag-problema">Problema Real</span>
+        <h3>Acúmulo de Matéria</h3>
+        <p>Sensação constante de que o conteúdo está acumulando e que o tempo nunca é suficiente.</p>
+      </div>
+      <div class="card-footer-actions" style="margin-top: 16px; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+        <button class="btn-modal" onclick="openModal('Acúmulo de Matéria e Procrastinação', 'Sensação constante de estar atrasado com os conteúdos escolares/acadêmicos.', 'Deixar as revisões para a véspera da prova por não saber como dividir as tarefas diariamente.', 'Criar um cronograma diário realista dividindo matérias grandes em pequenas metas de 25 minutos (Técnica Pomodoro).')" style="background: none; border: none; color: var(--text-muted); font-size: 0.85rem; cursor: pointer; text-decoration: underline;">Resumo Rápido</button>
+        <a href="acumulo-de-materia.html" style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem; text-decoration: none;">Ver Página Completa →</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div>
+        <span class="card-tag tag-incomodo">Incômodo do Dia a Dia</span>
+        <h3>Distrações Frequentes</h3>
+        <p>Dificuldade para manter a concentração por mais de 15 minutos sem olhar o celular.</p>
+      </div>
+      <div class="card-footer-actions" style="margin-top: 16px; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+        <button class="btn-modal" onclick="openModal('Falta de Foco e Distrações Digitais', 'Interrupções frequentes por notificações, redes sociais e falta de um ambiente silencioso.', 'O celular ao lado do caderno e a tentação de checar mensagens a todo momento.', 'Usar bloqueadores de aplicativos durante o bloco de estudo e deixar o celular em outro cômodo.')" style="background: none; border: none; color: var(--text-muted); font-size: 0.85rem; cursor: pointer; text-decoration: underline;">Resumo Rápido</button>
+        <a href="distracaoes-frequentes.html" style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem; text-decoration: none;">Ver Página Completa →</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div>
+        <span class="card-tag tag-rotina">Desafio da Rotina</span>
+        <h3>Sem Prioridades Claras</h3>
+        <p>Sentar para estudar e não saber por qual matéria ou tarefa começar primeiro.</p>
+      </div>
+      <div class="card-footer-actions" style="margin-top: 16px; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+        <button class="btn-modal" onclick="openModal('Cansaço Mental e Incerteza de Prioridades', 'Não saber por onde começar a estudar ao sentar na mesa, gerando ansiedade e cansaço.', 'Perder 20 minutos apenas tentando decidir qual matéria estudar no dia.', 'Definir na noite anterior exatamente quais 3 tarefas principais serão feitas no dia seguinte.')" style="background: none; border: none; color: var(--text-muted); font-size: 0.85rem; cursor: pointer; text-decoration: underline;">Resumo Rápido</button>
+        <a href="prioridades-claras.html" style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem; text-decoration: none;">Ver Página Completa →</a>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <div>
+        <span class="card-tag tag-problema">Problema Real</span>
+        <h3>Falta de Revisão Espaçada</h3>
+        <p>Sensação de que estuda muito, mas esquece tudo na hora de fazer a prova.</p>
+      </div>
+      <div class="card-footer-actions" style="margin-top: 16px; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+        <button class="btn-modal" onclick="openModal('Esquecimento do Conteúdo Estudado', 'Estudar durante horas, mas esquecer a maior parte da matéria dias depois.', 'A ausência de um método de revisão espaçada na rotina de estudos.', 'Adotar revisões periódicas rápidas (1 dia, 7 dias e 30 dias após aprender o conteúdo).')" style="background: none; border: none; color: var(--text-muted); font-size: 0.85rem; cursor: pointer; text-decoration: underline;">Resumo Rápido</button>
+        <a href="revisao-espacada.html" style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem; text-decoration: none;">Ver Página Completa →</a>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <div>
+        <span class="card-tag tag-incomodo">Insatisfação</span>
+        <h3>Listas Irrealistas</h3>
+        <p>Criar rotinas perfeitas no papel que são impossíveis de manter na prática diária.</p>
+      </div>
+      <div class="card-footer-actions" style="margin-top: 16px; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+        <button class="btn-modal" onclick="openModal('Sobrecarga e Sobredose de Tarefas', 'Tentar abraçar o mundo e criar listas de tarefas impossíveis de serem cumpridas.', 'Frustração ao final do dia por ver que a maioria dos itens do To-Do List ficou em aberto.', 'Aplicar a regra das 3 tarefas vitais do dia em vez de criar listas infinitas.')" style="background: none; border: none; color: var(--text-muted); font-size: 0.85rem; cursor: pointer; text-decoration: underline;">Resumo Rápido</button>
+        <a href="listas-irrealistas.html" style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem; text-decoration: none;">Ver Página Completa →</a>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <div>
+        <span class="card-tag tag-rotina">Desafio da Rotina</span>
+        <h3>Desorganização de Materiais</h3>
+        <p>Arquivos espalhados, anotações perdidas e falta de centralização das matérias.</p>
+      </div>
+      <div class="card-footer-actions" style="margin-top: 16px; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+        <button class="btn-modal" onclick="openModal('Ambiente e Materiais Desorganizados', 'Perda de tempo procurando anotações, links ou arquivos espalhados.', 'Cadernos bagunçados, PDFs perdidos no computador e falta de um local fixo.', 'Centralizar resumos e cronogramas em uma única ferramenta física ou digital.')" style="background: none; border: none; color: var(--text-muted); font-size: 0.85rem; cursor: pointer; text-decoration: underline;">Resumo Rápido</button>
+        <a href="desorganizacao-de-materiais.html" style="color: var(--primary-color); font-weight: 600; font-size: 0.85rem; text-decoration: none;">Ver Página Completa →</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">&times;</button>
+      <h2 class="modal-title" id="modalTitle">Título do Card</h2>
+      <div class="modal-body">
+        <p id="modalDescription">Descrição detalhada do problema...</p>
+        
+        <div class="modal-section">
+          <h4>Causa Principal</h4>
+          <p id="modalCause">Detalhes sobre o motivo desse problema acontecer.</p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Ideia de Solução para o App</h4>
+          <p id="modalSolution" class="solution-text">Como o app ajudará o estudante aqui.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT PARA INTERAÇÃO DO MODAL -->
+  <script>
+    function openModal(title, description, cause, solution) {
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalDescription').innerText = description;
+      document.getElementById('modalCause').innerText = cause;
+      document.getElementById('modalSolution').innerText = solution;
+      
+      document.getElementById('modalOverlay').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('modalOverlay').classList.remove('active');
+    }
+
+    // Fechar o modal ao clicar fora do conteúdo
+    document.getElementById('modalOverlay').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+  </script>
+
+</body>
+</html>
